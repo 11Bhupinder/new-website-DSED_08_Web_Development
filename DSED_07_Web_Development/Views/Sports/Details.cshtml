@@ -1,0 +1,36 @@
+﻿@model DSED_07_Web_Development.Models.Sports
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sports</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SportName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SportName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SportFees)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SportFees)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SportCoach)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SportCoach)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SportId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
